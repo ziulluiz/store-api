@@ -1,4 +1,5 @@
 import fiservLogo from "../../assets/fiserv_logo_orange_rgb.jpg";
+import './header.css';
 
 export const Header= () =>{
     return(
