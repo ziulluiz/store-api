@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer'
-
+import { Cards } from './components/cards/Cards';
 import { Carousel } from './components/carousel/Carousel';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 const Home = () => (
   <>
     <Carousel />
-    {/* <Cards /> */}
+    <Cards />
   </>
 );
 
