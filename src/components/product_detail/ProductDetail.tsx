@@ -102,11 +102,11 @@ export const ProductDetail = () => {
         'Request-Id': clientRequestId,
         'Api-Key': apiKey,
         'Timestamp': timestamp,
-        'MessageSignature': messageSignature
+        'Message-Signature': messageSignature
       };
 
       // Realizar la solicitud POST con axios
-      const response = await axios.post('https://tu-api.com/tu-endpoint', payload, { headers });
+      const response = await axios.post('https://cert.api.firstdata.com/gateway/v2', payload, { headers });
 
       // Manejar la respuesta según sea necesario
       console.log('Respuesta del servidor:', response.data);
@@ -116,5 +116,27 @@ export const ProductDetail = () => {
       // Maneja el error según tus necesidades
     }
   };
+
+  const handleGoBackClick = () => {
+    navigate("/");
+  };
+
+  return (
+    <div className="details_container">
+    <article key={product.id} className="card_item_details">
+      <div>
+        <img src={product.image} alt={product.title} />
+      </div>
+      <h3>{product.title}</h3>
+      <h3>Precio: {product.price}$</h3>
+      <div className="card_item-cta">
+        <button className='btn' onClick={handleGoBackClick}>Go Back</button>
+        <button className='btn btn-primary' onClick={handleBuyNowClick}>Buy Now</button>
+      </div>
+    </article>
+    {/* <iframe className="myFrame" id="myFrame" name="myFrame"></iframe> */}
+  </div>
+
+  )
 
 }
