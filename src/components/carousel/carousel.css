@@ -14,7 +14,7 @@
   
   .slick-prev,
   .slick-next {
-
+    display: none;
   }
 
   .slick-arrow {
