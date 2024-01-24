@@ -1,3 +1,7 @@
-export const Home = () =>{
-
-};
+import { Carousel } from '../carousel/Carousel'
+export const Home = () => (
+     <>
+        <Carousel />
+        {/* <Cards /> */}
+    </>
+)
