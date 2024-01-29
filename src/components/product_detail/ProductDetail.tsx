@@ -7,6 +7,8 @@ import bocina from '../../assets/bocina.jpg';
 import iphone from '../../assets/iphone.jpg';
 import S23 from '../../assets/S23.jpg';
 
+import './productDetail.css'
+
 import * as CryptoJS from 'crypto-js';
 
 
@@ -134,7 +136,6 @@ export const ProductDetail = () => {
         <button className='btn btn-primary' onClick={handleBuyNowClick}>Buy Now</button>
       </div>
     </article>
-    {/* <iframe className="myFrame" id="myFrame" name="myFrame"></iframe> */}
   </div>
 
   )
